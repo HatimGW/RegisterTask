@@ -1,0 +1,430 @@
+body{
+  background-color: rgb(219, 200, 105)
+}
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  min-height: 100vh;
+  box-shadow: 0 2px 27px black;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background: linear-gradient(30deg,rgb(226, 202, 80) 0%,rgb(69, 124, 145) 50%,rgb(226, 202, 80) 100%);
+  overflow: hidden;
+}
+.head {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  font-family: math;
+  color: rgb(226, 202, 80);
+  top: 2rem;
+  width: 100%;
+  font-size: 1rem;
+} 
+
+.head h1{
+  margin: 0;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(69, 124, 145);
+}
+
+.group{
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  width: 90%;
+  padding-right: 1rem;
+  margin-bottom: 0.5rem;
+}
+.group label{
+  font-size: 18px;
+  font-family: math;
+  color: azure;
+  font-weight: 400;
+  margin-right: 1rem;
+  margin-top: -0.5rem;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}
+.main fieldset{
+  background-color: rgba(0, 0, 0, 0.32) !important;
+  font-family: math;
+  font-size: 18px;
+  font-weight: bolder;
+  color: azure;
+  border-radius: 10px;
+}
+#legnd{
+  font-size: 25px;
+  color: rgb(232, 255, 255);
+  background-color: rgba(69, 124, 145, 0.932);
+  padding: 2px;
+  border-radius: 10px;
+  color: rgb(184, 166, 6);
+  box-shadow: 0 0px 5px rgb(226, 202, 80);
+}
+.main2{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  align-content: center;
+  min-width: 42rem;
+  flex-wrap: wrap;
+  padding: 35px;
+  padding-top: 1rem;
+  padding-bottom: 0px;
+}
+.text2 div input{
+  padding: 9px !important;
+  color: azure;
+}
+.text2 div input::placeholder{
+  color: rgba(240, 255, 255, 0.463);
+}
+.imp::after {
+  content: ' *';
+  color: red;
+}
+.statusDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.status{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1rem;
+}
+.status-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 2rem;
+  height: 15px;
+  border-radius: 20px;
+}
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.start {
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: center;
+  color: azure;
+  justify-content: center;
+}
+.end {
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  color: azure;
+  justify-content: center;
+}
+.selct label{
+  color: rgba(240, 255, 255, 0.137);
+}
+.error{
+position: absolute;
+right: 1rem;
+color: rgb(250, 96, 96);
+font-size: 10px;
+bottom: -1.2rem;
+}
+.error2{
+  position: absolute;
+  right: 16rem;
+  color: rgb(250, 96, 96);
+  font-size: 10px;
+  bottom: -1.2rem;
+  }
+.error svg{
+  position: absolute;
+  left: -17px;
+  bottom: -2px;
+  width: 0.7em;
+}
+.error2 svg{
+  position: absolute;
+  left: -17px;
+  bottom: -2px;
+  width: 0.7em;
+}
+#field{
+  box-shadow: 0 0 10px black !important;
+  border: none;
+}
+ #data-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#data-table th,
+  #data-table td {
+    text-align: center;
+    padding: 5px;
+    min-width: 1rem;
+}
+#data-table th{
+  color: azure;
+  border: 1px solid azure;
+  background-color: rgba(0, 0, 0, 0.634);
+}
+#data-table td{
+  border: 1px solid black;
+  background-color: rgba(240, 255, 255, 0.619);
+}
+.group {
+  margin-top: 20px;
+}
+.datatable-container {
+  overflow: hidden;
+  overflow-x: auto;
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  top: 4rem;
+  flex-direction: column;
+  font-family: math, sans-serif;
+  width: 100%;
+  height: 100%;
+}
+#data-table_wrapper{
+  width: 192%;
+  position: absolute;
+}
+.datatable-container p{
+  text-align: center;
+  color: rgb(8, 97, 97);
+  font-weight: bold;
+  font-size: 25px;
+}
+#data-table_length{
+  margin-top: 1rem;
+}
+#data-table_length label{
+  position: sticky;
+  left: 1rem;
+  margin-left: 1rem;
+  color: rgb(2, 1, 7);
+  font-weight: 800;
+}
+#data-table_length select{
+  margin-left: 1.5rem;
+  border-radius: 5px;
+  color: azure;
+  background-color: rgba(0, 0, 0, 0.258);
+}
+#data-table_length select option{
+  outline: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.805);
+}
+#data-table_info{
+  margin-top: 1rem;
+  margin-left: 1rem;
+  color: rgb(2, 1, 7);
+  font-weight: 800;
+}
+#data-table_paginate {
+  margin-top: 10px;
+  color: rgb(2, 1, 7);
+  font-weight: 800;
+  margin-left: 1rem;
+}
+#data-table_filter{
+  margin-top: 1rem;
+}
+#data-table_filter label{
+  position: sticky;
+  left: 1rem;
+  color: rgb(2, 1, 7);
+  font-weight: 800;
+}
+#data-table_filter input{
+  border-radius: 5px;
+  color: azure;
+  padding: 5px;
+  background-color: #00000042 !important;
+  border: none;
+  outline: none;
+  margin-left: 1rem;
+}
+#data-table_length select {
+  width: 70px;
+}
+.text2 div div{
+  padding: 9px !important;
+  color: azure;
+  min-width: 5.5rem;
+  padding-right: 116px !important;
+}
+.text3{
+  min-width: 13.5rem;
+}
+.text3 div div{
+  display: flex;
+  color:azure;
+  justify-content: flex-end;
+  align-items: center;
+}
+.step1 {
+  width: 90%;
+  background: linear-gradient(to right, #4caf50 0%, #4caf50 50%, #9294978d 50%, #9294978d 100%)
+}
+.step2 {
+  width: 90%;
+  background: linear-gradient(to right, #4caf50 0%, #4caf50 50%, #4caf50 50%, #4caf50 100%);
+}
+.back{
+  justify-content: flex-start;
+  position:absolute;
+  bottom:0rem;
+}
+.text2{
+  margin-top: 0.5rem !important;
+}
+.prev-icon{
+  position: relative;
+  z-index: 3;
+  font-size: 15px;
+  cursor: pointer;
+}
+.next-icon{
+  position: relative;
+  z-index: 3;
+  font-size: 15px;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+.previous{
+  text-align: center;
+}
+.paginate_button:not(.previous,.next){
+  margin-left: 0.5rem;
+}
+@media screen and (min-width:625px) and (max-width:812px) {
+  .main2{
+    max-width: 30rem;
+    min-width: 18rem;
+  }
+  .group{
+    width: 102%;
+  }
+  .group label{
+    text-wrap: wrap;
+    max-width: 8rem;
+  }
+  .text2{
+    margin-right: 1rem !important;
+  }
+  .text2 div input{
+    min-width: 5.5rem;
+  }
+  .text2 div div{
+    min-width: 5.5rem;
+  }
+  .error2{
+    right: 15rem;
+  }
+  .text3{
+    min-width: 13.5rem;
+    margin-right: 1rem;
+  }
+}
+@media screen and (min-width:350px) and (max-width:624px) {
+  .main2{
+    max-width: 15rem;
+    min-width: 15rem;
+  }
+  .group{
+    flex-direction: column;
+  }
+  .ID{
+    margin-bottom: 2rem !important;
+  }
+  .error{
+    right: 1rem;
+  }
+  form{
+    margin-bottom: 1rem;
+  }
+  .error2{
+    right: 1rem;
+    bottom: 3.3rem;
+  }
+  .text2 div div{
+    min-width: 5.5rem !important;
+  }
+  .back{
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width:270px) and (max-width:349px) {
+  .main2{
+    max-width: 10rem;
+    min-width: 10rem;
+  }
+  .group{
+    flex-direction: column;
+  }
+  .ID{
+    margin-bottom: 2rem !important;
+  }
+  .error{
+    right: 0rem;
+    text-wrap: nowrap;
+  }
+  form{
+    margin-bottom: 1rem;
+  }
+  .error2{
+    right: 1rem;
+    bottom: 3.3rem;
+  }
+  .text2 div div{
+    min-width: 1.5rem !important;
+  }
+  .back{
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+  .status{
+    width: 109%;
+  }
+  .group label{
+    text-wrap: wrap;
+    max-width: 8rem;
+  }
+  #data-table_wrapper{
+    width: 300%;
+  }
+  #data-table_filter label{
+    position: sticky;
+    left: 0rem;
+  }
+  #data-table_length label{
+    position: sticky;
+    left: 0rem;
+    margin-left: 0;
+  }
+}
